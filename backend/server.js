@@ -10,7 +10,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';
 
-// Middlewares
 app.use(cors());
 app.use(express.json());
 

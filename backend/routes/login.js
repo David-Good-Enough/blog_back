@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const pool = require('../config/db'); // Remplace par ta config DB
-const JWT_SECRET = process.env.JWT_SECRET || 'ton_secret';  // Clé JWT
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // Route POST pour gérer la connexion
 router.post('/', async (req, res) => {
